@@ -5,11 +5,19 @@ meta {
 }
 
 patch {
-  url: {{url_name}}/transacciones/1/completar
-  body: none
+  url: {{url_name}}/transacciones/completar
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "idTransaccion" : 1,
+    "idQr" : 23
+  }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

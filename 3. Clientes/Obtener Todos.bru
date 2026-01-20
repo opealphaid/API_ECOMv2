@@ -7,9 +7,14 @@ meta {
 get {
   url: {{url_name}}/clientes
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBlY29tbWVyY2UuY29tIiwiZXhwIjoxNzY0ODc4OTY4LCJpYXQiOjE3NjQ3OTI1Njh9.vDhROHV8aGcfQpdT3NSKypyrhbGge2oMhU-Mb0vT8FI
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
